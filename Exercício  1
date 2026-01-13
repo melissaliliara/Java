@@ -1,1 +1,60 @@
+Uma imobiliária vende apenas terrenos retangulares. Faça um algoritmo para imprimir a área do terreno e o valor de venda do mesmo. Para isso será necessário que o usuário informe as dimensões em metros (frente e lateral) do terreno além do valor cobrado pelo metro quadrado.
+
+// 
+
+Para calcular:
+Área do terreno = frente × lateral
+
+Input de dados:
+- Frente do terreno (em metros)
+
+- Lateral do terreno (em metros)
+
+- Valor do metro quadrado
+
+Processamento:
+- A área
+- O valor final do terreno
+- Valor de venda = área × valor do metro quadrado
+
+Type:
+
+Frente → número (pode ter decimal)
+
+Lateral → número (pode ter decimal)
+
+Valor do m² → número (dinheiro)
+
+Área → número
+
+Valor total → número//
+
+**********************************************************
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println();
+
+double frenteTerreno;
+double lateralTerreno;
+double valorMetro;
+double area;
+double valorTotal;
+
+Scanner scanner = new Scanner(System.in);
+System.out.println("Qual a frente do terreno em metros?");
+frenteTerreno = scanner.nextDouble();
+System.out.println("Qual a lateral do terreno em metros?");
+lateralTerreno = scanner.nextDouble();
+System.out.println("Qual o valor do metro quadrado?");
+valorMetro = scanner.nextDouble();
+
+area = frenteTerreno * lateralTerreno;
+valorTotal = area*valorMetro;
+
+System.out.println("O terreno possui" + frenteTerreno + " metros de frente" + lateralTerreno + "metros de lateral com área total de" + area);
+System.out.println("O valor do metro quadrado é de R$" + valorMetro +", tendo um custo total de" + valorTotal + "para este terreno");
+  }
+}
 
