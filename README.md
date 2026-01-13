@@ -37,6 +37,6 @@ Os códigos podem ser simples ou conter melhorias progressivas conforme avanço 
 
 ---
 
-## 🌱 Em aprendizado contínuo
+## 🌱 Aprendizado contínuo
 
 Este repositório será atualizado conforme novos exercícios forem realizados ao longo do curso **1000Devs**.
