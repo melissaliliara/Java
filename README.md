@@ -1,4 +1,4 @@
-# Exercícios de Java ☕🚀
+# Exercícios Java ☕🚀
 
 Este repositório contém exercícios desenvolvidos durante meus estudos de **Java**, como parte do **curso do programa 1000Devs**.
 
