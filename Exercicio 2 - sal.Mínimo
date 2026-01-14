@@ -1,1 +1,16 @@
+Exercício 02:  Faça um algoritmo que obtenha o valor do salário mínimo e o valor do salário de um funcionário, calcule e mostre a quantidade de especificações mínimas que ganha esse funcionário.
 
+Input:
+double salMinimo
+double salFuncionario
+
+Output:
+double salMinTotal
+
+*********************
+
+import java.util.scanner
+
+Class Main{
+  public static void main(string[]args){
+  System.out.println
