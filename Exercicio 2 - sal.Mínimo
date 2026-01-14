@@ -9,8 +9,26 @@ double salMinTotal
 
 *********************
 
-import java.util.scanner
+import java.util.Scanner;
 
-Class Main{
-  public static void main(string[]args){
-  System.out.println
+class Main{
+  public static void main(String[] args){
+  System.out.println();
+
+Scanner scanner= new Scanner(System.in);
+
+double salMinimo;
+double salFuncionario;
+double salMinTotal;
+
+
+System.out.println("Valor do salário mínimo:");
+ salMinimo= scanner.nextDouble();
+
+System.out.println("Valor do salário do funcionário:");
+  salFuncionario= scanner.nextDouble();
+
+salMinTotal = salFuncionario/salMinimo;
+System.out.println("O funcionário recebe" + salMinTotal + "salário mínimos");
+  }
+}
