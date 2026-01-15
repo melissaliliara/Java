@@ -1,1 +1,37 @@
 Exercício 03:  Faça um algoritmo para calcular quantas ferraduras são permitidas para equipar todos os cavalos comprados para um haras. O usuário deverá informar a quantidade de cavalos adquiridos.
+
+Input:
+int quantCavalos;
+Double valorFerradura;
+
+Output:
+
+totalFerraduras;
+totalValorFerraduras;
+
+***************************************
+
+import java.util.Scanner;
+
+class Main{
+  public static void main (string[] args){ 
+    scanner scanner;
+
+int quantCavalos;
+Double valorFerradura;
+
+    System.out.println("Informe a quantidade de cavalos:");
+      quantCavalos.nextint();
+
+    System.out.printl("Informe o valor da ferradura:");
+      valorFerradura.nextdouble();
+
+int totalFerraduras = quantCavalos * 4;
+double totalValorFerraduras = totalFerraduras * valorFerradura;
+
+System.out.println("Para um total de"+ quantCavalos "cavalos, será necessário"+totalFerraduras"ferraduras.");
+System.out.println("O valor total a ser gasto em ferraduras é de R$ "+totalValorFerraduras");
+
+}
+
+  }
