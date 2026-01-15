@@ -13,25 +13,27 @@ totalValorFerraduras;
 
 import java.util.Scanner;
 
-class Main{
-  public static void main (string[] args){ 
-    scanner scanner;
+class Main {
+    public static void main(String[] args) {
 
-int quantCavalos;
-Double valorFerradura;
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Informe a quantidade de cavalos:");
-      quantCavalos.nextint();
+        int quantCavalos;
+        double valorFerradura;
 
-    System.out.printl("Informe o valor da ferradura:");
-      valorFerradura.nextdouble();
+        System.out.println("Informe a quantidade de cavalos:");
+        quantCavalos = scanner.nextInt();
 
-int totalFerraduras = quantCavalos * 4;
-double totalValorFerraduras = totalFerraduras * valorFerradura;
+        System.out.println("Informe o valor da ferradura:");
+        valorFerradura = scanner.nextDouble();
 
-System.out.println("Para um total de"+ quantCavalos "cavalos, será necessário"+totalFerraduras"ferraduras.");
-System.out.println("O valor total a ser gasto em ferraduras é de R$ "+totalValorFerraduras");
+        int totalFerraduras = quantCavalos * 4;
+        double totalValorFerraduras = totalFerraduras * valorFerradura;
 
+        System.out.println("Para um total de " + quantCavalos + 
+                           " cavalos, será necessário " + totalFerraduras + " ferraduras.");
+
+        System.out.println("O valor total a ser gasto em ferraduras é de R$ " + totalValorFerraduras);
+    }
 }
 
-  }
