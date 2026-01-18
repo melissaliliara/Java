@@ -1,0 +1,56 @@
+Exercício 04: Faça um algoritmo para ler o salário de um funcionário e aumente-o em 15%. Após o aumento, desconte 11% do INSS e 8% do FGTS. Imprima o salário inicial, o salário com o aumento, o salário final, o desconto do INSS, o desconto do FGTS e o Total de Descontos (INSS+FGTS).
+
+Input:
+
+double salario;
+
+Output:
+double novoSalario; (salario * 15%)
+Desc. INSS - 11%
+Desc. FGT - 8%
+Total de descontos (INSS+FGTS)
+
+double salarioInicial;
+double salarioFinal;
+
+*********************************************************************
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double salario;
+        double novoSalario;
+        double descontoInss;
+        double descontoFgts;
+        double totalDescontos;
+        double salarioFinal;
+
+        System.out.print("Digite o salário: ");
+        salario = scanner.nextDouble();
+
+        System.out.println("Salário Inicial: R$ " + salario);
+
+        // Aumento de 15%
+        novoSalario = salario * 1.15;
+        System.out.println("Salário com aumento (15%): R$ " + novoSalario);
+
+        // Descontos
+        descontoInss = novoSalario * 0.11;
+        descontoFgts = novoSalario * 0.08;
+
+        System.out.println("Desconto INSS (11%): R$ " + descontoInss);
+        System.out.println("Desconto FGTS (8%): R$ " + descontoFgts);
+
+        totalDescontos = descontoInss + descontoFgts;
+        System.out.println("Total de Descontos (INSS + FGTS): R$ " + totalDescontos);
+
+        salarioFinal = novoSalario - totalDescontos;
+        System.out.println("Salário Final: R$ " + salarioFinal);
+
+        scanner.close();
+    }
+}
