@@ -1,1 +1,41 @@
 A granja Frangotech possui um controle automatizado de cada frango da sua produção. No pé direito do frango há um anel com um chip de identificação; no pé esquerdo são dois anéis para indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa R$4,00 e o anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para marcar todos os seus frangos que devem ser informados pelo usuário.
+
+Input:
+
+Int quantFrango;
+
+Processamento: 
+
+Anel com chip: R$4,00 (1 por frango)
+Anel de alimento custa R$3,50 (2 por frango)
+
+Output:
+
+Gasto total com chips.
+
+*************************************
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int quantFrango;
+        double anelChip;
+        double anelAlimentacao;
+        double total;
+
+        System.out.print("Informe a quantidade de frangos: ");
+        quantFrango = scanner.nextInt();
+
+        anelChip = quantFrango * 4.0;
+        anelAlimentacao = quantFrango * 3.5 * 2;
+
+        total = anelChip + anelAlimentacao;
+
+        System.out.println("O gasto total da granja é de R$ " + total);
+
+        scanner.close();
+    }
+}
